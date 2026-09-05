@@ -9,36 +9,24 @@ const platformTypes = [
     context: "Structured evaluation",
     description:
       "Administer assessments, collect responses, and coordinate reviewers in one place. Candidates move through your selection process on your rules, not a vendor's.",
-    facts: [
-      "Custom workflows",
-      "Reviewer access",
-      "Secure records",
-    ],
   },
   {
     title: "Interview platforms",
     context: "Candidate interviews",
     description:
       "Record and review asynchronous candidate responses under your own branding. No third-party interview vendor between you and your applicants.",
-    facts: ["Video responses", "Review tools", "Program branding"],
   },
   {
     title: "Competition management platforms",
     context: "Educational programs",
     description:
       "Run the program from registration through results. Keep teams, events, judging, scorecards, and program resources in one place.",
-    facts: [
-      "Teams and events",
-      "Judging and scoring",
-      "Program operations",
-    ],
   },
   {
     title: "Workflow automation",
     context: "Operational automation",
     description:
       "Staff should not spend every cycle assembling files or copying data between systems. Automate reports, correspondence, and the repeatable steps a coordinator currently does by hand.",
-    facts: ["Manual processes", "Data handling", "Staff time"],
   },
 ];
 
@@ -46,12 +34,12 @@ const engagementOptions = [
   {
     label: "Build — from $18,000",
     description:
-      "A platform designed around your workflow, branded to your program, launched in weeks. Final scope depends on complexity, integrations, and how much of the cycle the platform covers.",
+      "Designed around your workflow, branded to your program, and launched in weeks.",
   },
   {
     label: "Annual — from $9,000",
     description:
-      "Hosting, support with a response commitment, security and dependency maintenance, per-cycle configuration changes, and continued development. Scales with platform size and support needs.",
+      "Hosting, support with a response commitment, security and dependency maintenance, per-cycle configuration changes, and continued development.",
   },
   {
     label: "All-in — from $13,000/year",
@@ -205,10 +193,9 @@ export function StudioHome() {
         <div className="min-w-0 border-t border-[#9ea69b] pt-6">
           <p className="font-serif text-xl leading-9 text-[#405047]">
             Skip six-month vendor timelines, enterprise markups, and
-            four-figure invoices for small changes. Get a platform built for
-            your program, in your branding, with hosting, support, and ongoing
-            improvements included. You work directly with the person who builds
-            and maintains it.
+            four-figure invoices for small changes. Get a platform in your
+            branding, built around your cycle. All while working directly with
+            the person who builds and maintains it.
           </p>
           <Button
             asChild
@@ -246,10 +233,9 @@ export function StudioHome() {
                 Software shaped around how your program operates.
               </h2>
               <p className="mt-5 max-w-md font-serif text-lg leading-8 text-[#405047]">
-                Your workflow, your brand, and the features your team needs in
-                one dedicated platform. Selection software has to reflect the
-                rules, timing, handoffs, and review responsibilities of your
-                program. Most engagements combine more than one of these.
+                Selection software has to reflect your rules, timing, handoffs,
+                and review responsibilities. Most engagements combine more than
+                one of these.
               </p>
             </div>
 
@@ -263,26 +249,12 @@ export function StudioHome() {
                     {String(index + 1).padStart(2, "0")}
                   </p>
                   <div>
-                    <div className="grid gap-3 sm:grid-cols-[1fr_auto] sm:items-start">
-                      <div>
-                        <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#9a6b2f]">
-                          {platform.context}
-                        </p>
-                        <h3 className="mt-2 text-2xl font-semibold tracking-[-0.035em]">
-                          {platform.title}
-                        </h3>
-                      </div>
-                      <div className="flex flex-wrap gap-2 sm:justify-end">
-                        {platform.facts.map((fact) => (
-                          <span
-                            key={fact}
-                            className="border border-[#c5c9bf] px-2.5 py-1 font-mono text-[0.65rem] uppercase tracking-[0.12em] text-[#5b665d]"
-                          >
-                            {fact}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+                    <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#9a6b2f]">
+                      {platform.context}
+                    </p>
+                    <h3 className="mt-2 text-2xl font-semibold tracking-[-0.035em]">
+                      {platform.title}
+                    </h3>
                     <p className="mt-5 max-w-3xl font-serif text-lg leading-8 text-[#405047]">
                       {platform.description}
                     </p>
@@ -306,11 +278,9 @@ export function StudioHome() {
             What a platform costs, and what it replaces.
           </h2>
           <p className="mt-5 max-w-xl font-serif text-lg leading-8 text-[#405047]">
-            Every program is different, so scope drives the number. Some start
-            with a full platform. Others start with one workflow that&apos;s
-            causing the most pain and expand from there. These are starting
-            points. The exact figures come out of a scoping conversation, not a
-            form.
+            Start with a full platform or one painful workflow. These are
+            starting points. Scope, integrations, and support needs determine
+            the final number.
           </p>
           <p className="mt-8 max-w-xl border-t border-[#9ea69b] pt-6 font-serif text-lg leading-8 text-[#405047]">
             A vendor charging $12,000 a year costs $60,000 over five years,
@@ -352,13 +322,8 @@ export function StudioHome() {
             <div className="bg-[#162820] p-6 sm:p-10 lg:p-12">
               <p className="font-serif text-xl leading-9 text-white/78">
                 The platform carries your branding, follows your process, and
-                your data stays yours. You email the person who wrote the code.
-                No ticket queue, no account manager.
-              </p>
-              <p className="mt-5 font-serif text-sm leading-7 text-white/65">
-                Most programs begin with a build and continue on an annual
-                partnership. Pricing is scoped to your program. Share how your
-                cycle runs, and you&apos;ll get a real number.
+                your data stays yours. Export it whenever you need it, in a
+                format you can use.
               </p>
               <Button
                 asChild
@@ -383,7 +348,12 @@ export function StudioHome() {
       <footer className="border-t border-[#c5c9bf] px-5 py-8 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-[#687066] sm:px-8 lg:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-semibold text-[#162820]">Chapel Pines Studio LLC</p>
-          <p>Bespoke software for scholarship and educational programs.</p>
+          <a
+            href="mailto:hello@chapelpines.studio"
+            className="transition hover:text-[#162820]"
+          >
+            hello@chapelpines.studio
+          </a>
         </div>
       </footer>
     </main>
