@@ -73,7 +73,7 @@ const clients = [
     width: 250,
     height: 26,
     linkClass:
-      "flex h-14 w-64 shrink-0 items-center justify-center bg-[#7BAFD4] px-5 transition hover:bg-[#6aa3cc]",
+      "flex h-14 w-56 shrink-0 items-center justify-center bg-[#7BAFD4] px-5 transition hover:bg-[#6aa3cc] sm:w-64",
     imageClass: "h-auto w-full",
   },
   {
@@ -91,14 +91,15 @@ const clients = [
     src: "/client-logos/unc-parr-center-for-ethics.png",
     width: 1015,
     height: 122,
-    linkClass: "w-72 shrink-0 opacity-85 transition hover:opacity-100",
+    linkClass:
+      "w-64 shrink-0 opacity-85 transition hover:opacity-100 sm:w-72",
     imageClass: "h-auto w-full",
   },
 ];
 
 function ClientLogoGroup() {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+    <div className="flex min-w-0 flex-wrap items-center justify-center gap-6 sm:gap-12">
       {clients.map((client) => (
         <a
           key={client.name}
@@ -134,7 +135,7 @@ export function StudioHome() {
       </div>
 
       <header className="border-b border-[#c5c9bf] px-5 py-4 sm:px-8 lg:px-10">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-5">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 sm:gap-5">
           <a href="#top" className="leading-none" aria-label="Home">
             <span className="block font-mono text-xs font-semibold uppercase tracking-[0.28em]">
               CHAPEL PINES
@@ -156,7 +157,7 @@ export function StudioHome() {
           </nav>
           <Button
             asChild
-            className="rounded-none bg-[#162820] px-4 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-white hover:bg-[#263c33]"
+            className="rounded-none bg-[#162820] px-3 font-mono text-[0.64rem] uppercase tracking-[0.08em] text-white hover:bg-[#263c33] sm:px-4 sm:text-[0.72rem] sm:tracking-[0.12em]"
             size="sm"
           >
             <a
@@ -182,7 +183,7 @@ export function StudioHome() {
             Proudly serving
           </p>
 
-          <div className="flex justify-center overflow-hidden">
+          <div className="flex min-w-0 justify-center overflow-hidden">
             <ClientLogoGroup />
           </div>
         </div>
@@ -192,7 +193,7 @@ export function StudioHome() {
         id="top"
         className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:px-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.65fr)] lg:items-end lg:px-10 lg:py-20"
       >
-        <div>
+        <div className="min-w-0">
           <h1 className="mb-7 max-w-4xl font-mono text-3xl font-semibold uppercase leading-tight tracking-[0.06em] text-[#5b665d] sm:text-4xl lg:text-5xl">
             Bespoke software for scholarship and educational programs
           </h1>
@@ -201,7 +202,7 @@ export function StudioHome() {
           </p>
         </div>
 
-        <div className="border-t border-[#9ea69b] pt-6">
+        <div className="min-w-0 border-t border-[#9ea69b] pt-6">
           <p className="font-serif text-xl leading-9 text-[#405047]">
             Skip six-month vendor timelines, enterprise markups, and
             four-figure invoices for small changes. Get a platform built for
@@ -237,7 +238,7 @@ export function StudioHome() {
       >
         <div className="mx-auto max-w-7xl">
           <div className="grid items-start gap-8 lg:grid-cols-[0.68fr_1.32fr]">
-            <div>
+            <div className="min-w-0">
               <p className="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-[#9a6b2f]">
                 What Chapel Pines Builds
               </p>
@@ -252,7 +253,7 @@ export function StudioHome() {
               </p>
             </div>
 
-            <div className="border-t border-[#9ea69b]">
+            <div className="min-w-0 border-t border-[#9ea69b]">
               {platformTypes.map((platform, index) => (
                 <article
                   key={platform.title}
@@ -297,7 +298,7 @@ export function StudioHome() {
         id="pricing"
         className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[0.82fr_1.18fr] lg:px-10"
       >
-        <div>
+        <div className="min-w-0">
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-[#9a6b2f]">
             Engagement
           </p>
@@ -318,7 +319,7 @@ export function StudioHome() {
           </p>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <div className="grid gap-px border border-[#c5c9bf] bg-[#c5c9bf] md:grid-cols-2">
             {engagementOptions.map((option) => (
               <div
