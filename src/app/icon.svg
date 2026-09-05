@@ -1,0 +1,16 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  role="img"
+  aria-label="Chapel Pines Studio"
+>
+  <rect width="64" height="64" rx="8" fill="#162820" />
+  <path
+    d="M17 52V29C17 18.5 23.7 11 32 11s15 7.5 15 18v23"
+    fill="none"
+    stroke="#f8f7f1"
+    stroke-width="5"
+    stroke-linecap="square"
+  />
+  <path d="M32 13V52" stroke="#d2a05d" stroke-width="4" />
+</svg>
