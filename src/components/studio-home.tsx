@@ -44,7 +44,7 @@ const engagementOptions = [
   {
     label: "All-in — from $13,000/year",
     description:
-      "No upfront build cost, three-year minimum. Everything above, on an operating budget instead of a capital request.",
+      "No upfront build cost, three-year minimum. Build + Annual, on an operating budget instead of a capital request.",
   },
   {
     label: "Pilot — from $5,000",
