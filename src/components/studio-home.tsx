@@ -8,13 +8,13 @@ const platformTypes = [
     title: "Assessment platforms",
     context: "Structured evaluation",
     description:
-      "Administer assessments, collect responses, and coordinate reviewers in one place. Candidates move through your selection process on your rules, not a vendor's.",
+      "Administer assessments, collect responses, and coordinate reviewers in one place. Candidates move through your selection process on your rules.",
   },
   {
     title: "Interview platforms",
     context: "Candidate interviews",
     description:
-      "Record and review asynchronous candidate responses under your own branding. No third-party interview vendor between you and your applicants.",
+      "Record and review candidate responses under your own branding. No third-party interview vendor between you and your applicants.",
   },
   {
     title: "Competition management platforms",
@@ -49,7 +49,7 @@ const engagementOptions = [
   {
     label: "Pilot — from $5,000",
     description:
-      "One workflow for one cycle, often an automation that removes manual work your team does every year.",
+      "One workflow for one cycle, often an automation or small website that removes manual work your team does every year.",
   },
 ];
 
@@ -182,10 +182,10 @@ export function StudioHome() {
         className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:px-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.65fr)] lg:items-end lg:px-10 lg:py-20"
       >
         <div className="min-w-0">
-          <h1 className="mb-7 max-w-4xl font-mono text-3xl font-semibold uppercase leading-tight tracking-[0.06em] text-[#5b665d] sm:text-4xl lg:text-5xl">
+          <h1 className="mb-7 max-w-4xl font-mono text-3xl font-semibold uppercase leading-tight tracking-[0.06em] text-[#162820] sm:text-4xl lg:text-5xl">
             Bespoke software for scholarship and educational programs
           </h1>
-          <p className="max-w-5xl text-balance text-4xl font-semibold tracking-[-0.055em] sm:text-5xl lg:text-[4.5rem] lg:leading-[0.94]">
+          <p className="max-w-5xl text-balance text-lg font-semibold tracking-[-0.055em] text-[#5b665d] sm:text-2xl lg:text-[2.25rem] lg:leading-[1.05]">
             Control the software your program depends on.
           </p>
         </div>
@@ -234,8 +234,7 @@ export function StudioHome() {
               </h2>
               <p className="mt-5 max-w-md font-serif text-lg leading-8 text-[#405047]">
                 Selection software has to reflect your rules, timing, handoffs,
-                and review responsibilities. Most engagements combine more than
-                one of these.
+                and review responsibilities.
               </p>
             </div>
 
@@ -252,10 +251,10 @@ export function StudioHome() {
                     <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#9a6b2f]">
                       {platform.context}
                     </p>
-                    <h3 className="mt-2 text-2xl font-semibold tracking-[-0.035em]">
+                    <h3 className="mt-1 text-2xl font-semibold tracking-[-0.035em]">
                       {platform.title}
                     </h3>
-                    <p className="mt-5 max-w-3xl font-serif text-lg leading-8 text-[#405047]">
+                    <p className="mt-2 max-w-3xl font-serif text-lg leading-8 text-[#405047]">
                       {platform.description}
                     </p>
                   </div>
@@ -319,16 +318,11 @@ export function StudioHome() {
                 Launch is the beginning, not the handoff.
               </h2>
             </div>
-            <div className="bg-[#162820] p-6 sm:p-10 lg:p-12">
-              <p className="font-serif text-xl leading-9 text-white/78">
-                The platform carries your branding, follows your process, and
-                your data stays yours. Export it whenever you need it, in a
-                format you can use.
-              </p>
+            <div className="flex items-center bg-[#162820] p-6 sm:p-10 lg:p-12">
               <Button
                 asChild
                 size="lg"
-                className="mt-8 h-11 w-full rounded-none bg-[#f8f7f1] px-5 font-mono text-xs uppercase tracking-[0.14em] text-[#162820] hover:bg-[#e4dfd3] sm:w-auto"
+                className="h-11 w-full rounded-none bg-[#f8f7f1] px-5 font-mono text-xs uppercase tracking-[0.14em] text-[#162820] hover:bg-[#e4dfd3] sm:w-auto"
               >
                 <a
                   href="https://calendly.com/brendonjcarroll/30min"
@@ -346,14 +340,8 @@ export function StudioHome() {
       </section>
 
       <footer className="border-t border-[#c5c9bf] px-5 py-8 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-[#687066] sm:px-8 lg:px-10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-7xl items-center">
           <p className="font-semibold text-[#162820]">Chapel Pines Studio LLC</p>
-          <a
-            href="mailto:hello@chapelpines.studio"
-            className="transition hover:text-[#162820]"
-          >
-            hello@chapelpines.studio
-          </a>
         </div>
       </footer>
     </main>
