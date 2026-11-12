@@ -79,6 +79,15 @@ const clients = [
       "w-64 shrink-0 opacity-85 transition hover:opacity-100 sm:w-72",
     imageClass: "h-auto w-full",
   },
+  {
+    name: "Türk Eğitim Vakfı",
+    href: "https://www.tev.org.tr/homepage/en",
+    src: "/client-logos/turk-egitim-vakfi.png",
+    width: 512,
+    height: 512,
+    linkClass: "shrink-0 opacity-85 transition hover:opacity-100",
+    imageClass: "size-24 object-contain",
+  },
 ];
 
 function ClientLogoGroup() {
